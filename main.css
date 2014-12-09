@@ -1,0 +1,56 @@
+div.stream-item:not(.open) div.tweet.original-tweet div.stream-item-header ul.actions {
+	width: 100%;
+	padding-left: 0;
+	background-image: none;
+	text-align: right;
+}
+
+div.stream-item:not(.open) div.tweet.original-tweet div.stream-item-header ul.actions li {
+	background-color: #fff;
+}
+
+.tweet .action-save-container .icon-save,
+.js-stream-item .ProfileTweet-actionList .icon-save {
+	background-color: #ccd6dd !important;
+	background-position: -5px -5px !important;
+	background-repeat: no-repeat !important;
+	height: 16px;
+	position: relative;
+	top: 4px;
+	width: 16px;
+}
+
+.js-stream-item .ProfileTweet .icon-save,
+.tweet.has-native-media .action-save-container .icon-save {
+	top: 5px;
+}
+
+.tweet .action-save-container .icon-save:hover,
+.js-stream-item .ProfileTweet .icon-save:hover,
+.tweet .action-save-container .icon-save-saved,
+.js-stream-item .ProfileTweet .icon-save-saved {
+	background-color: #ef4056 !important; 
+}
+
+.tweet .action-save-container .icon-save-saved,
+.js-stream-item .ProfileTweet .icon-save-saved {
+	cursor: default;
+}
+
+.tweet:hover .action-save-container .icon-save,
+.permalink .js-stream-tweet .action-save-container .icon-save {
+	background-position: -5px -30px !important;
+}
+
+.expanding-stream-item.open .original-tweet:hover .action-save-container .icon-save,
+.permalink-tweet:hover .action-save-container .icon-save {
+	background-position: -5px -5px !important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {
+	.tweet .action-save-container .icon-save,
+	.js-stream-item .ProfileTweet-actionList .icon-save {
+		-webkit-background-size: 25px 50px !important;
+		background-size: 25px 50px !important;
+	}
+}
