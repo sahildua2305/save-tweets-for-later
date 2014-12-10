@@ -9,6 +9,7 @@ function create(){
 	var o=0;
 	var f=document.createElement("span");
 	f.setAttribute("class","icon icon-save");
+	f.setAttribute("id","save-extension");
 	f.setAttribute("style","background-image: url(https://pbs.twimg.com/media/B4fddhjCIAEgDy8.png) !important;");
 	$(e).append(f);
 	$(d).append(e);
@@ -16,22 +17,14 @@ function create(){
 	var len = tweets.length;
 	for(i=len-1;i>=0;i--){
 		if(!$(tweets[i]).has(".action-save-container").length){
-			//if($(tweets[i]).has(".ProfileTweet-actionList u-cf js-actions").length){
-				var actionDiv = $(tweets[i]).find(".ProfileTweet-actionList");
-				$(d).clone().appendTo(actionDiv);
+			var actionDiv = $(tweets[i]).find(".ProfileTweet-actionList");
+			$(d).clone().appendTo(actionDiv);
 		}
 	}
 }
-//create();
-
 var refreshInterval = 1500;
-function exp(){
-	var e = document.createElement("p");
-	e.className = "experiments";
-	var tweet = document.getElementsByClassName('tweet');
-	//console.log(tweet);
-	$("<p>testing</p>").appendTo(".tweet");
-}
-//exp();
-
 setInterval(function(){create();},refreshInterval);
+
+$("#save-extension").click(function(){
+	console.log("s");
+});

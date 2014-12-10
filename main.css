@@ -16,6 +16,7 @@ div.stream-item:not(.open) div.tweet.original-tweet div.stream-item-header ul.ac
 	height: 16px;
 	position: relative;
 	top: 4px;
+	opacity:0.3;
 	width: 16px;
 }
 
@@ -28,7 +29,7 @@ div.stream-item:not(.open) div.tweet.original-tweet div.stream-item-header ul.ac
 .js-stream-item .ProfileTweet .icon-save:hover,
 .tweet .action-save-container .icon-save-saved,
 .js-stream-item .ProfileTweet .icon-save-saved {
-	background-color: #ef4056 !important; 
+	opacity:1.0;
 }
 
 .tweet .action-save-container .icon-save-saved,
@@ -38,7 +39,7 @@ div.stream-item:not(.open) div.tweet.original-tweet div.stream-item-header ul.ac
 
 .tweet:hover .action-save-container .icon-save,
 .permalink .js-stream-tweet .action-save-container .icon-save {
-	background-color: #ef4056 !important; 
+	
 }
 
 .expanding-stream-item.open .original-tweet:hover .action-save-container .icon-save,
