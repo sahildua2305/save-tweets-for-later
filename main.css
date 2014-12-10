@@ -12,7 +12,6 @@ div.stream-item:not(.open) div.tweet.original-tweet div.stream-item-header ul.ac
 .tweet .action-save-container .icon-save,
 .js-stream-item .ProfileTweet-actionList .icon-save {
 	background-color: #ccd6dd !important;
-	background-position: -5px -5px !important;
 	background-repeat: no-repeat !important;
 	height: 16px;
 	position: relative;
@@ -39,12 +38,12 @@ div.stream-item:not(.open) div.tweet.original-tweet div.stream-item-header ul.ac
 
 .tweet:hover .action-save-container .icon-save,
 .permalink .js-stream-tweet .action-save-container .icon-save {
-	background-position: -5px -30px !important;
+	background-color: #ef4056 !important; 
 }
 
 .expanding-stream-item.open .original-tweet:hover .action-save-container .icon-save,
 .permalink-tweet:hover .action-save-container .icon-save {
-	background-position: -5px -5px !important;
+	
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 144dpi) {

@@ -9,21 +9,18 @@ function create(){
 	var o=0;
 	var f=document.createElement("span");
 	f.setAttribute("class","icon icon-save");
-	f.setAttribute("style","background-image: url(https://d2jjx1cmnmp22i.cloudfront.net/safari/twttr-sprite@"+(o?"2x":"1x")+".png) !important;");
+	f.setAttribute("style","background-image: url(https://pbs.twimg.com/media/B4fddhjCIAEgDy8.png) !important;");
 	$(e).append(f);
 	$(d).append(e);
 	var tweets = $(".tweet");
 	var len = tweets.length;
-	for(var i=len-1;i>=0;i--){
-		if($(tweets[i]).has(".action-save-container").length){
-			console.log("already has");
-		}
-		else{
-			console.log("needs to be added");
-			$(d).appendTo(tweets[i]);
+	for(i=len-1;i>=0;i--){
+		if(!$(tweets[i]).has(".action-save-container").length){
+			//if($(tweets[i]).has(".ProfileTweet-actionList u-cf js-actions").length){
+				var actionDiv = $(tweets[i]).find(".ProfileTweet-actionList");
+				$(d).clone().appendTo(actionDiv);
 		}
 	}
-	console.log("exit");
 }
 //create();
 
