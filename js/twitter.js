@@ -13,19 +13,21 @@ function create(){
 	$(e).append(f);
 	$(d).append(e);
 	var tweets = $(".tweet");
-	for(var i=0;i<tweets.length;i++){
-		if(!$(tweets[i]).has(".action-save-container").length){
+	var len = tweets.length;
+	for(var i=len-1;i>=0;i--){
+		if($(tweets[i]).has(".action-save-container").length){
 			console.log("already has");
 		}
 		else{
 			console.log("needs to be added");
+			$(d).appendTo(tweets[i]);
 		}
 	}
-	//$(d).appendTo(new_tweets);
+	console.log("exit");
 }
 //create();
 
-var refreshInterval = 1050;
+var refreshInterval = 1500;
 function exp(){
 	var e = document.createElement("p");
 	e.className = "experiments";
@@ -35,4 +37,4 @@ function exp(){
 }
 //exp();
 
-setInterval(function(){create();},1000);
+setInterval(function(){create();},refreshInterval);
