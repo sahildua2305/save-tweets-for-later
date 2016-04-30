@@ -2,9 +2,6 @@
 	"name"			: "Save tweets for later",
 	"description"	: "Save tweets for later", 
 	"browser_action": {
-		"default_icon": {
-			"80": "cs.jpg"
-		}, 
 		"default_title"	: "View saved tweets", 
 		"default_popup"	: "index.html"
 	},
